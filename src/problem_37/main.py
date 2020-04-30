@@ -23,9 +23,7 @@ def main():
 
     res_list = []
 
-    for prime in prime_generator(100000000):
-        print(prime)
-
+    for prime in prime_generator(999999):
         if prime < 20:
             continue
 
