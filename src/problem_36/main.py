@@ -1,11 +1,8 @@
 import time
+from euler_lib.utilits import is_palindrome
 
 
-def is_palindrome(s: str) -> bool:
-    return s == s[::-1]
-
-
-def int_2_bin(n: int) -> str:
+def int_2_bin_str(n: int) -> str:
     return "{0:b}".format(n)
 
 
@@ -13,7 +10,7 @@ def is_valid(n: int) -> bool:
     if not is_palindrome(str(n)):
         return False
 
-    b = int_2_bin(n)
+    b = int_2_bin_str(n)
     if b[0] == 0:
         return False
 
