@@ -4,7 +4,7 @@ def is_palindrome(number: int) -> bool:
         return False
 
     for i in range(0, len(str_number) // 2):
-        if str_number[i] != str_number[len(str_number) -i -1]:
+        if str_number[i] != str_number[len(str_number) - i - 1]:
             return False
     return True
 
