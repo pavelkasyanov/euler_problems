@@ -1,5 +1,8 @@
+import pathlib
 import string
 import time
+
+DATA_FILE = pathlib.Path(__file__).parent.resolve() / "names.txt"
 
 
 def char_position(letter):
@@ -8,9 +11,9 @@ def char_position(letter):
 
 def main():
     print("start")
-    start = time.clock()
+    start = time.time()
 
-    with open("names.txt", "r") as f:
+    with open(DATA_FILE, "r") as f:
         src_names = f.readlines()[0].split(",")
 
     triangle_numbers_sum = 0
@@ -25,7 +28,7 @@ def main():
 
     print(f"result_score: {triangle_numbers_sum}")
 
-    print(f"exit, time: {time.clock() - start}")
+    print(f"exit, time: {time.time() - start}")
 
 
 if __name__ == '__main__':

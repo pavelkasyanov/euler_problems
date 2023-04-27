@@ -19,7 +19,7 @@ def is_truncatable(n: str)-> bool:
 
 def main():
     print("start")
-    start = time.clock()
+    start = time.time()
 
     res_list = []
 
@@ -34,7 +34,7 @@ def main():
             break
 
     print(f"result: {sum(res_list)}")
-    print(f"exit, time: {time.clock() - start}")
+    print(f"exit, time: {time.time() - start}")
 
 
 if __name__ == '__main__':

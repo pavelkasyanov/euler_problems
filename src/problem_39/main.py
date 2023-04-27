@@ -13,13 +13,13 @@ def count_solutions(p):
 
 def main():
     print("start")
-    start = time.clock()
+    start = time.time()
 
     result = max(range(1, 1001), key=count_solutions)
 
     print(f"result: {result}")
 
-    print(f"exit, time: {time.clock() - start}")
+    print(f"exit, time: {time.time() - start}")
 
 
 if __name__ == '__main__':

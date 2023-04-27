@@ -19,12 +19,12 @@ def is_valid(n: int) -> bool:
 
 def main():
     print("start")
-    start = time.clock()
+    start = time.time()
 
     res = sum(x for x in range(1, 1000000) if is_valid(x))
     print(f"result: {res}")
 
-    print(f"exit, time: {time.clock() - start}")
+    print(f"exit, time: {time.time() - start}")
 
 
 if __name__ == '__main__':

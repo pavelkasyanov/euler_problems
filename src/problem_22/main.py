@@ -1,4 +1,7 @@
+import pathlib
 import string
+
+DATA_FILE = pathlib.Path(__file__).parent.resolve() / "names.txt"
 
 
 def char_position(letter):
@@ -11,7 +14,7 @@ def name_score(name: str, index: int) -> int:
 
 
 def main():
-    with open("names.txt", "r") as f:
+    with open(DATA_FILE, "r") as f:
         src_names = f.readlines()[0].split(",")
 
     sorted_names = sorted(src_names)

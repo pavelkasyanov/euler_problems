@@ -10,11 +10,11 @@ MAX_B = 101
 def main():
     print("start")
 
-    start = time.clock()
+    start = time.time()
 
     lst = set(a ** b for a in range(MIN_A, MAX_A) for b in range(MIN_B, MAX_B))
 
-    print(f"result: {len(lst)}, time: {time.clock() - start}")
+    print(f"result: {len(lst)}, time: {time.time() - start}")
 
     print("exit")
 
